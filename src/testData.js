@@ -60,7 +60,7 @@ export const navLinks = [
         dropdownLinks:[]
     },
     {
-        title:"LeaderBoard",
+        title:"Leaderboard",
         icon: leaderboardIcon,
         link: "/leaderboard",
         dropdown:false,

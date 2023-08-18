@@ -1,8 +1,12 @@
 import React from 'react'
+import PageHeader from '@/components/PageHeader'
+
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='page'>
+      <PageHeader pageHeader={'Home'}/>
+    </div>
   )
 }
 

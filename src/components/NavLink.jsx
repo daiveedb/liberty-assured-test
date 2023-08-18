@@ -14,7 +14,7 @@ const NavLink = ({item, updateSelected, selected}) => {
     const handleLinkStyles = () => {
         if(item.title === selected ){
             console.log("changed");
-            setStyles("bg-[#192749ff]")
+            setStyles("bg-libertyLightBlue")
 
         }else{
             setStyles("bg-transparent")
@@ -33,7 +33,7 @@ const NavLink = ({item, updateSelected, selected}) => {
                 <div>
                     <Image width={20} height={20} alt='icon' src={item.icon}/>
                 </div>
-                <p className='tracking-tight'>{item.title}</p>
+                <p className='font-nunito'>{item.title}</p>
             </div>
             <div>
                 {item.dropdown?

@@ -6,13 +6,20 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      extend: {
+        fontFamily: {
+          nunito: ["nunito", "sans-serif"],
+          clashDisplay: ['Clash Display', 'sans-serif']
+        },
+        colors: {
+          libertyBlue: '#032282',
+          libertyGray: '#818181',
+          libertyDarkBlue: '#07112d',
+          libertyRed: '#F00',
+          libertyLightBlue:'#192749',
+          libertyLightPurple:'#ecf0ff',         
+        }
       },
-    },
   },
   plugins: [],
 }

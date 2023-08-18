@@ -1,10 +1,12 @@
 import React from 'react'
+import PageHeader from '@/components/PageHeader'
 
 const page = () => {
   return (
-    <div>
-        Coming soon
+    <div className='page'>
+      <PageHeader pageHeader={'Cards'}/>
     </div>
+    
   )
 }
 

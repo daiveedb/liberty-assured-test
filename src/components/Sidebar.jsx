@@ -17,8 +17,8 @@ const Sidebar = () => {
         <div className='absolute -right-[300px] md:static top-0 max-w-[300px] min-w-[300px] min-h-screen py-4 px-7'>
 
           <div className='py-6'>
-            <h1 className='text-4xl font-bold tracking-tight'>Paybox</h1>
-            <p className='text-xs tracking-wide font-extralight'>by LibertyPay</p>
+            <h1 className='text-4xl header font-bold'>Paybox</h1>
+            <p className='text-xs header tracking-wide font-extralight'>by LibertyPay</p>
           </div>
 
           <Divider/>
