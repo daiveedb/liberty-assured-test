@@ -8,6 +8,7 @@ const PageHeader = ({pageHeader}) => {
   return (
     <div className='h-[100px] md:rounded-2xl bg-[#032282] text-white md:text-black md:bg-white px-8 pt-5 pb-2 flex items-center justify-between'>
         <h1 className='text-xl font-medium'>{pageHeader}</h1>
+        
         <div className='flex justify-between gap-x-4 pr-5'>
             <div className='w-10 h-10 bg-[#ecf0ff] rounded-full flex justify-center items-center'>
                 <div className='w-7 h-7 relative'>
