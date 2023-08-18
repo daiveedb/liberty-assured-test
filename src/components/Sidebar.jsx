@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import Divider from './Divider'
 import { navLinks } from '@/testData'
@@ -7,13 +8,13 @@ const Sidebar = () => {
 
   const [selected, setSelected] = useState("Analytics Dashboard")
 
-  const handleSelected = (str) => {
+  const updateSelected = (str) => {
     setSelected(str)
   }
 
   return (
     <div>
-        <div className='absolute -right-[250px] md:static top-0 max-w-[200px] min-w-[270px] min-h-screen py-4 px-7'>
+        <div className='absolute -right-[300px] md:static top-0 max-w-[300px] min-w-[300px] min-h-screen py-4 px-7'>
 
           <div className='py-6'>
             <h1 className='text-4xl font-bold tracking-tight'>Paybox</h1>
@@ -24,7 +25,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(0,2).map((item) => {
-              return <NavLink handleSelected={handleSelected} item={item}/>
+              return <NavLink key={item.title} selected={selected} handleSelected={updateSelected} item={item}/>
             })
           }
 
@@ -32,15 +33,15 @@ const Sidebar = () => {
 
           {
             navLinks.slice(2,7).map((item) => {
-              return <NavLink item={item}/>
+              return <NavLink key={item.title} selected={selected} handleSelected={updateSelected} item={item}/>
             })
           }
 
           <Divider/>
 
           {
-            navLinks.slice(7,11).map((item) => {
-              return <NavLink item={item}/>
+            navLinks.slice(7,10).map((item) => {
+              return <NavLink key={item.title} selected={selected} handleSelected={updateSelected} item={item}/>
             })
           }
           
