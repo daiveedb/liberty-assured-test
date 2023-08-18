@@ -8,16 +8,19 @@ module.exports = {
   theme: {
       extend: {
         fontFamily: {
-          nunito: ["nunito", "sans-serif"],
-          clashDisplay: ['Clash Display', 'sans-serif']
+          nunito: ["Nunito", "sans-serif"],
+          clashDisplay: ['Clash Display', 'sans-serif'],
+          montserrat: ['Montserrat, sans-serif']
         },
         colors: {
           libertyBlue: '#032282',
-          libertyGray: '#818181',
+          // libertyGray: '#818181',
           libertyDarkBlue: '#07112d',
           libertyRed: '#F00',
           libertyLightBlue:'#192749',
-          libertyLightPurple:'#ecf0ff',         
+          libertyLightPurple:'#ecf0ff',
+          libertyLighterBlue: "#2D4696", 
+          libertyGray:"#F8F9FB"        
         }
       },
   },

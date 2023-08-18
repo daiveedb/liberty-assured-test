@@ -4,7 +4,7 @@ import divider from "../projectSvgs/dividerLine.svg"
 
 const Divider = () => {
   return (
-    <div className='py-6 text-white w-full items-center'>
+    <div className='py-4 text-white w-full items-center'>
         <Image width={250} height={10} src={divider} alt='divider' />
     </div>
   )

@@ -14,7 +14,7 @@ const NavLink = ({item, updateSelected, selected}) => {
     const handleLinkStyles = () => {
         if(item.title === selected ){
             console.log("changed");
-            setStyles("bg-libertyLightBlue")
+            setStyles("bg-libertyLighterBlue md:bg-libertyLightBlue")
 
         }else{
             setStyles("bg-transparent")

@@ -13,10 +13,9 @@ const Sidebar = () => {
   }
 
   return (
-    <div>
-        <div className='absolute -right-[300px] md:static top-0 max-w-[300px] min-w-[300px] min-h-screen py-4 px-7'>
+      <div id='sidebar' className='absolute -right-[300px] md:static top-[100px] max-w-[300px] min-w-[300px] min-h-[85vh] md:min-h-screen md:py-4 px-7 bg-libertyBlue md:bg-libertyDarkBlue transition-all'>
 
-          <div className='py-6'>
+          <div className='md:py-6'>
             <h1 className='text-4xl header font-bold'>Paybox</h1>
             <p className='text-xs header tracking-wide font-extralight'>by LibertyPay</p>
           </div>
@@ -45,8 +44,7 @@ const Sidebar = () => {
             })
           }
           
-        </div>
-    </div>
+       </div>
   )
 }
 
