@@ -1,13 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
+import {AiOutlineRight} from "react-icons/ai"
 
 const NavLink = ({item}) => {
   return (
-    <div className='flex w-full h-[500px] text-white'>
-        <div>
-            <Image width={40} height={40} fill src={item.icon}/>
+    <div className='flex justify-between items-center'>
+        <div className='flex w-full py-2 text-white gap-x-2'>
+            <div>
+                <Image width={20} height={20} src={item.icon}/>
+            </div>
+            <p className='tracking-tight'>{item.title}</p>
         </div>
-        <p>{item.title}</p>
+        <div>
+            {item.dropdown?
+            <p className='text-lg'><AiOutlineRight/></p>
+            :
+            <p></p>
+            }
+        </div>
     </div>
   )
 }
