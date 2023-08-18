@@ -25,7 +25,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(0,2).map((item) => {
-              return <NavLink key={item.title} selected={selected} handleSelected={updateSelected} item={item}/>
+              return <NavLink key={item.title} selected={selected} updateSelected={updateSelected} item={item}/>
             })
           }
 
@@ -33,7 +33,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(2,7).map((item) => {
-              return <NavLink key={item.title} selected={selected} handleSelected={updateSelected} item={item}/>
+              return <NavLink key={item.title} selected={selected} updateSelected={updateSelected} item={item}/>
             })
           }
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(7,10).map((item) => {
-              return <NavLink key={item.title} selected={selected} handleSelected={updateSelected} item={item}/>
+              return <NavLink key={item.title} selected={selected} updateSelected={updateSelected} item={item}/>
             })
           }
           

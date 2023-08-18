@@ -76,7 +76,7 @@ export const navLinks = [
     {
         title:"Bank Performance",
         icon: bankPerformanceIcon,
-        link: "/bankPerformance",
+        link: "/",
         dropdown:true,
         dropdownLinks:[]
     }

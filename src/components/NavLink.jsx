@@ -13,6 +13,7 @@ const NavLink = ({item, updateSelected, selected}) => {
 
     const handleLinkStyles = () => {
         if(item.title === selected ){
+            console.log("changed");
             setStyles("bg-[#192749ff]")
 
         }else{
@@ -21,7 +22,7 @@ const NavLink = ({item, updateSelected, selected}) => {
     }
     useEffect(() => {
         handleLinkStyles()
-    })
+    },[selected])
 
 
 
