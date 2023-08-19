@@ -37,7 +37,7 @@ const NavLink = ({item, updateSelected, selected}) => {
   return (
     <Link href={item.link}>
             <div onClick={() => handleClick(item.title)} className={styles+' flex w-full justify-between items-center rounded-md'}>
-                <div className='flex w-full items-center py-3 pl-3 text-white gap-x-2 rounded-lg'>
+                <div className='flex w-full items-center py-2 pl-3 text-white gap-x-2 rounded-lg'>
                     <div>
                         <Image width={20} height={20} alt='icon' src={item.icon}/>
                     </div>

@@ -13,7 +13,7 @@ const Sidebar = () => {
   }
 
   return (
-      <div id='sidebar' className='fixed z-10 -right-[270px] md:static top-[100px] max-w-[270px] min-w-[270px] min-h-[85vh] md:min-h-screen md:py-4 px-7 bg-libertyBlue md:bg-libertyDarkBlue transition-all'>
+      <div id='sidebar' className='fixed z-10 -right-[270px] md:static top-[14vh] max-w-[270px] min-w-[270px] min-h-[86vh] md:min-h-screen md:py-4 px-7 bg-libertyBlue md:bg-libertyDarkBlue transition-all'>
 
           <div className='md:py-6'>
             <h1 className='text-4xl header font-bold'>Paybox</h1>
