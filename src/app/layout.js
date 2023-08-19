@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className='overflow-x-hidden w-screen' lang="en">
       <head>
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,300&display=swap" rel="stylesheet"></link>
       </head>
