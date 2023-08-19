@@ -29,7 +29,7 @@ const PageHeader = ({pageHeader}) => {
 
 
   return (
-    <div className='h-[100px] md:rounded-3xl bg-libertyBlue text-white md:text-black md:bg-white px-4 md:px-8 pt-5 pb-2 flex items-center justify-between'>
+    <div className='h-[100px] md:rounded-3xl bg-libertyBlue text-white md:text-black md:bg-white px-3 md:px-8 lg:px-4 pt-5 pb-2 flex items-center justify-between'>
         <h1 className='text-lg sm:text-xl font-medium'>{pageHeader}</h1>
              
         <ProfileSnippet userHasNotification = {userHasNotification}/>

@@ -6,7 +6,7 @@ import {GoDotFill, GoChevronDown} from "react-icons/go"
 
 const ProfileSnippet = ({userHasNotification}) => {
   return (
-    <div className='hidden md:flex justify-between items-center gap-x-4 pr-5'>
+    <div className='hidden md:flex justify-between items-center md:gap-x-2 lg:gap-x-4 pr-5'>
         <div className='w-7 h-7 lg:w-10 lg:h-10 bg-libertyLightPurple rounded-full flex justify-center items-center'>
             <div className='w-5 h-5 lg:w-7 lg:h-7 relative'> 
             <Image src={notificationIcon} alt='profile photo' width={60} height={60}/>

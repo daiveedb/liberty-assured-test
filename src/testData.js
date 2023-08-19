@@ -85,7 +85,7 @@ export const navLinks = [
 export const balance = [
     {
         title: "wallet balance",
-        amount: "50,000.00"
+        amount: 50000.00
     },
     {
         title: "total savings balance",
@@ -97,7 +97,7 @@ export const balance = [
     },
     {
         title: "total POS",
-        amount: 50000
+        amount: 0
     },
 ]
 
