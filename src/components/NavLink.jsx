@@ -1,48 +1,54 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {AiOutlineRight} from "react-icons/ai"
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from "next/navigation"
+
 
 const NavLink = ({item, updateSelected, selected}) => {
 
-    const handleSelected = (str) => {
+   
+    const pathname = usePathname()
+
+    const handleClick = (str) => {
         updateSelected(str)
     }
     const [styles, setStyles] = useState('')
 
     const handleLinkStyles = () => {
-        if(item.title === selected ){
-            console.log("changed");
+        if(!item.dropdown && item.link === pathname ){
             setStyles("bg-libertyLighterBlue md:bg-libertyLightBlue")
 
         }else{
             setStyles("bg-transparent")
         }
     }
+
+
     useEffect(() => {
         handleLinkStyles()
-    },[selected])
+    },[pathname])
 
 
 
   return (
     <Link href={item.link}>
-        <div onClick={() => handleSelected(item.title)} className={styles+' flex w-full justify-between items-center rounded-md'}>
-            <div className='flex w-full items-center py-3 pl-3 text-white gap-x-2 rounded-lg'>
-                <div>
-                    <Image width={20} height={20} alt='icon' src={item.icon}/>
+            <div onClick={() => handleClick(item.title)} className={styles+' flex w-full justify-between items-center rounded-md'}>
+                <div className='flex w-full items-center py-3 pl-3 text-white gap-x-2 rounded-lg'>
+                    <div>
+                        <Image width={20} height={20} alt='icon' src={item.icon}/>
+                    </div>
+                    <p className='font-nunito'>{item.title}</p>
                 </div>
-                <p className='font-nunito'>{item.title}</p>
+                <div>
+                    {item.dropdown?
+                    <p id='dropdown-arrow' className='text-lg'><AiOutlineRight/></p>
+                    :
+                    <p></p>
+                    }
+                </div>
             </div>
-            <div>
-                {item.dropdown?
-                <p className='text-lg'><AiOutlineRight/></p>
-                :
-                <p></p>
-                }
-            </div>
-        </div>
     </Link>
   )
 }

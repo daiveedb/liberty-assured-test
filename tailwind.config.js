@@ -10,17 +10,18 @@ module.exports = {
         fontFamily: {
           nunito: ["Nunito", "sans-serif"],
           clashDisplay: ['Clash Display', 'sans-serif'],
-          montserrat: ['Montserrat, sans-serif']
+          montserrat: ['Montserrat, sans-serif'],
+          sora: ["Sora, sans-serif"]
         },
         colors: {
           libertyBlue: '#032282',
-          // libertyGray: '#818181',
           libertyDarkBlue: '#07112d',
           libertyRed: '#F00',
           libertyLightBlue:'#192749',
           libertyLightPurple:'#ecf0ff',
           libertyLighterBlue: "#2D4696", 
-          libertyGray:"#F8F9FB"        
+          libertyGray:"#F8F9FB",
+          libertyDarkGray:"#CDCDCD",        
         }
       },
   },

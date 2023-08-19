@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import ProfileSnippet from './ProfileSnippet'
 import MenuButton from './MenuButton'
@@ -20,8 +20,12 @@ const PageHeader = ({pageHeader}) => {
             sidebar.style.right = 0
             setIsSidebarOn(true)
         }
-    }
+    }   
 
+
+    useEffect(() => {
+        toggleSidebar()
+    },[])
 
 
   return (

@@ -11,14 +11,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className='overflow-x-hidden w-screen' lang="en">
+    <html lang="en">
       <head>
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,300&display=swap" rel="stylesheet"></link>
       </head>
-        <body className={inter.className + " w-[100vw] overflow-x-hidden"}>
+        <body className={inter.className}>
           <div className='flex justify-between items-center bg-libertyDarkBlue w-[100vw] overflow-x-hidden'>
             <Sidebar/> 
-            <main className='w-full overflow-x-hidden min-h-screen md:px-2 md:py-5'>
+            <main className='w-full min-h-screen max-h-max md:px-2 md:py-5'>
               {children}
             </main>
           </div>

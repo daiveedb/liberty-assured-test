@@ -27,28 +27,28 @@ export const navLinks = [
     {
         title:"Personal",
         icon: personalIcon,
-        link: "/",
+        link: "",
         dropdown:true,
         dropdownLinks:[]
     },
     {
         title:"Sales Hub",
         icon: saleHubIcon,
-        link: "/",
+        link: "",
         dropdown:true,
         dropdownLinks:[]
     },
     {
         title:"Talent Management",
         icon: talentManagementIcon,
-        link: "/",
+        link: "",
         dropdown:true,
         dropdownLinks:[]
     },
     {
         title:"Spend Management",
         icon: spendManagementIcon,
-        link: "/",
+        link: "",
         dropdown:true,
         dropdownLinks:[]
     },
@@ -76,8 +76,75 @@ export const navLinks = [
     {
         title:"Bank Performance",
         icon: bankPerformanceIcon,
-        link: "/",
+        link: "",
         dropdown:true,
         dropdownLinks:[]
     }
+]
+
+export const balance = [
+    {
+        title: "wallet balance",
+        amount: "50,000.00"
+    },
+    {
+        title: "total savings balance",
+        amount: 194000
+    },
+    {
+        title: "total customers",
+        amount: 919
+    },
+    {
+        title: "total POS",
+        amount: 50000
+    },
+]
+
+export const transfer = [
+    {
+        title:"total transfer",
+        values: {
+            today:500,
+            yesterday:200,
+            thisWeek:500,
+            lastWeek:200
+        }
+    },
+    {
+        title:"total transfer",
+        values: {
+            today:500,
+            yesterday:200,
+            thisWeek:500,
+            lastWeek:200
+        }
+    },
+    {
+        title:"total transfer",
+        values: {
+            today:500,
+            yesterday:200,
+            thisWeek:500,
+            lastWeek:200
+        }
+    },
+    {
+        title:"total transfer",
+        values: {
+            today:500,
+            yesterday:200,
+            thisWeek:500,
+            lastWeek:200
+        }
+    },
+    {
+        title:"total transfer",
+        values: {
+            today:500,
+            yesterday:200,
+            thisWeek:500,
+            lastWeek:200
+        }
+    },
 ]
