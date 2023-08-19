@@ -8,7 +8,7 @@ import MenuButton from '../navigationComponents/MenuButton'
 const PageHeader = ({pageHeader}) => {
 
     const [isSidebarOn , setIsSidebarOn] = useState(false)
-    const [userHasNotification, setUserHasNotification] = useState(true)
+    const [userHasNotification] = useState(true)
 
 
     const toggleSidebar = () => {
@@ -21,11 +21,6 @@ const PageHeader = ({pageHeader}) => {
             setIsSidebarOn(true)
         }
     }   
-
-
-    // useEffect(() => {
-    //     toggleSidebar()
-    // },[])
 
 
   return (

@@ -36,3 +36,9 @@ body {
 .page{
   @apply w-full min-h-[100vh] md:min-h-[95vh] md:max-h-[95vh] overflow-x-hidden bg-libertyGray md:rounded-3xl text-black
 }
+.dashboard-div{
+  @apply bg-white w-full rounded-lg text-libertyBlue py-3 px-3 relative font-sora
+}
+.dashboard-div-header{
+  @apply font-sora text-sm text-libertyDTextBlue font-light capitalize
+}

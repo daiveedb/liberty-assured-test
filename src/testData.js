@@ -107,44 +107,36 @@ export const transfer = [
         values: {
             today:500,
             yesterday:200,
-            thisWeek:500,
-            lastWeek:200
+            this_week:500,
+            last_week:200
         }
     },
     {
-        title:"total transfer",
+        title:"total inflow",
         values: {
-            today:500,
-            yesterday:200,
-            thisWeek:500,
-            lastWeek:200
+            today:2000000,
+            yesterday:5000000,
+            this_week:5000000,
+            last_week:5000000
         }
     },
     {
-        title:"total transfer",
+        title:"total transations",
         values: {
-            today:500,
-            yesterday:200,
-            thisWeek:500,
-            lastWeek:200
+            today:2000000,
+            yesterday:5000000,
+            this_week:5000000,
+            last_week:5000000
         }
     },
     {
-        title:"total transfer",
+        title:"transaction count",
         values: {
-            today:500,
-            yesterday:200,
-            thisWeek:500,
-            lastWeek:200
+            today:2000000,
+            yesterday:5000000,
+            this_week:5000000,
+            last_week:5000000
         }
     },
-    {
-        title:"total transfer",
-        values: {
-            today:500,
-            yesterday:200,
-            thisWeek:500,
-            lastWeek:200
-        }
-    },
+    
 ]

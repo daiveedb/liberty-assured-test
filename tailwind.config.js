@@ -23,7 +23,8 @@ module.exports = {
           libertyGray:"#F8F9FB",
           libertyDarkGray:"#CDCDCD",
           libertyDashboardLightBlue: "#F6FAFF",
-          libertyDTextBlue:"#4F64A7"        
+          libertyDTextBlue:"#4F64A7",
+          libertyLightestBlue:"#EAF4FF"        
         }
       },
   },
