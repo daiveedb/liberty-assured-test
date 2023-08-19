@@ -1,7 +1,7 @@
 import React from 'react'
 import downArrow from "@/projectSvgs/downArrowIcon.svg"
 import Image from 'next/image'
-import { commaFormat } from '../formatNumber'
+import { commaFormat } from '../../formatNumber'
 
 const TransactionsComponent = ({item}) => {
     const id = item.id

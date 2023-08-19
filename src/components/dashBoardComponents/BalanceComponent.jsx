@@ -1,5 +1,5 @@
 import React from 'react'
-import { commaFormat } from '../formatNumber'
+import { commaFormat } from '../../formatNumber'
 import Image from 'next/image'
 import rightArrow from "@/projectSvgs/rightArrowsIcon.png"
 

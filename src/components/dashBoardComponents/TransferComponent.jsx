@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import downArrow from "@/projectSvgs/downArrowIcon.svg"
-import { commaFormat } from '../formatNumber'
+import { commaFormat } from '../../formatNumber'
 
 const TransferComponent = ({item}) => {
 

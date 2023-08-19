@@ -1,7 +1,7 @@
 import React from 'react'
 import { balance } from '@/testData'
 import WalletSvgs from './WalletSvgs'
-import { commaFormat } from '../formatNumber'
+import { commaFormat } from '../../formatNumber'
 
 const WalletBalance = () => {
 
