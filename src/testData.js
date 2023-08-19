@@ -8,6 +8,8 @@ import cardsIcon from "./projectSvgs/cardsIcon.svg"
 import leaderboardIcon from "./projectSvgs/leaderboardIcon.svg"
 import profileIcon from "./projectSvgs/profileIcon.svg"
 import bankPerformanceIcon from "./projectSvgs/bankPerformanceIcon.svg"
+import redCircle from "@/projectSvgs/redCircle.png"
+import greenCircle from "@/projectSvgs/greenCircle.png"
 
 export const navLinks = [
     {
@@ -137,6 +139,59 @@ export const transfer = [
             this_week:5000000,
             last_week:5000000
         }
+    },
+    
+]
+export const transaction = [
+    {
+        id:1,
+        title:"Total Cashout",
+        header1:"Today",
+        value1:1200000,
+        header2:"yesterday",
+        value2:1200000,
+        icon1:"",
+        icon2:""
+    },
+    {
+        id:2,
+        title:"Transaction status",
+        header1:"Successful",
+        value1:422,
+        header2:"Failed",
+        value2:19,
+        icon1:greenCircle,
+        icon2:redCircle
+    },
+    {
+        id:3,
+        title:"Average Transaction Count",
+        header1:"Value",
+        value1:20400,
+        header2:"count",
+        value2:422,
+        icon1:"",
+        icon2:""
+    },
+    {
+        id:4,
+        title:"Total Commission",
+        header1:"POS Commission",
+        value1:87000,
+        header2:"Lotto Commission",
+        value2:102000,
+        icon1:"",
+        icon2:""
+    },
+    {
+        id:5,
+        title:"Average commision per transaction",
+        header1:"POS Commission",
+        value1:500,
+        header2:"Lotto Commission",
+        value2:200,
+        icon1:"",
+        icon2:""
     },
     
 ]

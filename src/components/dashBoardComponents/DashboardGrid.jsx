@@ -2,6 +2,7 @@ import React from 'react'
 import WalletBalance from './WalletBalance'
 import Balances from './Balances'
 import Transfers from './Transfers'
+import Transactions from './Transactions'
 
 const DashboardGrid = () => {
   return (
@@ -9,6 +10,7 @@ const DashboardGrid = () => {
         <WalletBalance/>
         <Balances/>
         <Transfers/>
+        <Transactions/>
     </div>
   )
 }

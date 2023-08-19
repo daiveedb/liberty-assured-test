@@ -20,7 +20,7 @@ const TransferComponent = ({item}) => {
                     <Image src={downArrow} width={10} height={10} alt='down arrow'/>
                 </div>
             </div>
-            <div className='grid grid-cols-2 py-6 gap-y-4 justify-between w-full'>
+            <div className='grid grid-cols-2 py-6 gap-y-4 w-full'>
                 {keyValuePairs.map(([key,value],index) => {
                    return(
                     <div key={index}>
