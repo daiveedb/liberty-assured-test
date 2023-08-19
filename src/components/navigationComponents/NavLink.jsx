@@ -13,6 +13,8 @@ const NavLink = ({item, updateSelected, selected}) => {
 
     const handleClick = (str) => {
         updateSelected(str)
+        const sidebar = document.getElementById("sidebar")
+        sidebar.style.right = '-300px'
     }
     const [styles, setStyles] = useState('')
 

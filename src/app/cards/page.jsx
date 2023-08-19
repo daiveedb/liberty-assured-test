@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
-import PageHeader from '@/components/PageHeader'
-import ComingSoon from '@/components/ComingSoon'
+import PageHeader from '@/components/utilityComponents/PageHeader'
+import ComingSoon from '@/components/utilityComponents/ComingSoon'
 
 const page = () => {
   return (

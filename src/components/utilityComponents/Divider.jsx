@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import divider from "../projectSvgs/dividerLine.svg"
+import divider from "../../projectSvgs/dividerLine.svg"
 
 const Divider = () => {
   return (

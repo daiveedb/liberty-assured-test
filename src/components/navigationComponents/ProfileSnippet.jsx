@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import profilePhoto from "../projectSvgs/profilePhoto.png"
-import notificationIcon from "../projectSvgs/notification-bing.svg"
+import profilePhoto from "../../projectSvgs/profilePhoto.png"
+import notificationIcon from "../../projectSvgs/notification-bing.svg"
 import {GoDotFill, GoChevronDown} from "react-icons/go"
 
 const ProfileSnippet = ({userHasNotification}) => {

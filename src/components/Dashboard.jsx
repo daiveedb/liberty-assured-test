@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
-import PageHeader from './PageHeader'
-import DashboardGrid from '@/components/DashboardGrid'
+import PageHeader from './utilityComponents/PageHeader'
+import DashboardGrid from '@/components/dashBoardComponents/DashboardGrid'
 
 const Dashboard = () => {
   return (

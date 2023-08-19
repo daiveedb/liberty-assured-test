@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Divider from './Divider'
+import Divider from './utilityComponents/Divider'
 import { navLinks } from '@/testData'
-import NavLink from './NavLink'
+import NavLink from './navigationComponents/NavLink'
 
 const Sidebar = () => {
 

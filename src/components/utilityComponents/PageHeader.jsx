@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-import ProfileSnippet from './ProfileSnippet'
-import MenuButton from './MenuButton'
+import ProfileSnippet from '../navigationComponents/ProfileSnippet'
+import MenuButton from '../navigationComponents/MenuButton'
 
 
 
@@ -23,9 +23,9 @@ const PageHeader = ({pageHeader}) => {
     }   
 
 
-    useEffect(() => {
-        toggleSidebar()
-    },[])
+    // useEffect(() => {
+    //     toggleSidebar()
+    // },[])
 
 
   return (

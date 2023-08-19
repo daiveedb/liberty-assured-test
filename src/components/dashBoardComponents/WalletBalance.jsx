@@ -12,7 +12,7 @@ const WalletBalance = () => {
             <p className='text-sm text-libertyDarkGray capitalize font-nunito tracking-wide'>{WalletBalance.title}</p>
             <p className='text-xl font-semibold font-sora tracking-wide'>₦{WalletBalance.amount}</p>
         </div>   
-        <div className='flex justify-between w-full text-sm py-4'>
+        <div className='flex justify-between w-max gap-x-8 md:gap-x-0 md:w-full text-sm py-4'>
             <button className='wallet-button'>Add Funds</button>
             <button className='wallet-button'>Withdraw</button>
         </div>
