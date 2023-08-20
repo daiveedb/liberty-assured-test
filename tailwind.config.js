@@ -24,7 +24,11 @@ module.exports = {
           libertyDarkGray:"#CDCDCD",
           libertyDashboardLightBlue: "#F6FAFF",
           libertyDTextBlue:"#4F64A7",
-          libertyLightestBlue:"#EAF4FF"        
+          libertyLightestBlue:"#EAF4FF",
+          libertyTextGray:"#37474F",
+          libertyTextBlack:"#263238",
+          libertyChartYellow:"#F4BE38",
+          libertyChartPurple:"#EDE1FF"
         }
       },
   },

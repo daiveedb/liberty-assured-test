@@ -11,16 +11,16 @@ const TransferComponent = ({item}) => {
 
 
   return (
-    <div className='dashboard-div h-[203px]'>
+    <div className='dashboard-div h-[190px]'>
         <div className='bg-libertyDashboardLightBlue w-full h-full py-4 px-3'>
             <div className='flex justify-between items-center'>
                 <p className='dashboard-div-header'>{item.title}</p>
-                <div className='bg-libertyLightestBlue w-[70px] h-8 flex justify-center items-center rounded-md gap-x-2'>
+                <div className='bg-libertyLightestBlue w-[70px] h-8 flex justify-center items-center rounded-md gap-x-2 cursor-pointer'>
                     <p className='text-xs font-extralight'>More</p>
                     <Image src={downArrow} width={10} height={10} alt='down arrow'/>
                 </div>
             </div>
-            <div className='grid grid-cols-2 py-6 gap-y-4 w-full'>
+            <div className='grid grid-cols-2 py-4 gap-y-3 w-full'>
                 {keyValuePairs.map(([key,value],index) => {
                    return(
                     <div key={index}>

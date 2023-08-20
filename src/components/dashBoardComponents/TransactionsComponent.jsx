@@ -8,9 +8,9 @@ const TransactionsComponent = ({item}) => {
 
     let style
     if(id === 5){
-        style = "h-[200px]"
+        style = "h-[190px]"
     }else{
-        style = "h-[160px]"
+        style = "h-[150px]"
     }
 
   return (
@@ -18,7 +18,7 @@ const TransactionsComponent = ({item}) => {
         <div className='bg-libertyDashboardLightBlue w-full h-full py-4 px-3 flex flex-col justify-between'>
             <div className='flex justify-between items-center gap-x-3'>
                 <p className='dashboard-div-header'>{item.title}</p>
-                <div className='bg-libertyLightestBlue w-[70px] h-8 flex justify-center items-center rounded-md gap-x-2'>
+                <div className='bg-libertyLightestBlue w-[70px] h-8 flex justify-center items-center rounded-md gap-x-2 cursor-pointer'>
                     <p className='text-xs font-extralight'>More</p>
                     <Image src={downArrow} width={10} height={10} alt='down arrow'/>
                 </div>

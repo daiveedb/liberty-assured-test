@@ -8,7 +8,7 @@ const WalletBalance = () => {
     const WalletBalance = balance[0]
 
   return (
-    <div className='bg-libertyBlue w-full h-[160px] rounded-lg text-white py-7 px-5 relative overflow-y-hidden'>
+    <div className='bg-libertyBlue w-full h-[150px] rounded-lg text-white py-7 px-5 relative overflow-y-hidden'>
         <div>
             <p className='text-sm text-libertyDarkGray capitalize font-nunito tracking-wide'>{WalletBalance.title}</p>
             <p className='text-xl font-semibold font-sora tracking-wide'>₦{commaFormat(WalletBalance.amount.toString())}</p>

@@ -3,6 +3,7 @@ import WalletBalance from './WalletBalance'
 import Balances from './Balances'
 import Transfers from './Transfers'
 import Transactions from './Transactions'
+import TransactionComparativeComponent from './TransactionComparativeComponent'
 
 const DashboardGrid = () => {
   return (
@@ -11,6 +12,7 @@ const DashboardGrid = () => {
         <Balances/>
         <Transfers/>
         <Transactions/>
+        <TransactionComparativeComponent/>
     </div>
   )
 }

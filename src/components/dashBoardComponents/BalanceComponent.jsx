@@ -5,7 +5,7 @@ import rightArrow from "@/projectSvgs/rightArrowsIcon.png"
 
 const BalanceComponent = ({item}) => {
   return (
-    <div className='dashboard-div h-[160px]'>
+    <div className='dashboard-div h-[150px]'>
         <div className='bg-libertyDashboardLightBlue w-full rounded-lg px-2 py-4 flex flex-col justify-between gap-7'>
             <p className='dashboard-div-header'>{item.title}</p>
             <p className='text-xl font-semibold'>{item.amount?"₦":""}{commaFormat(item.amount)}</p>

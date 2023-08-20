@@ -40,5 +40,30 @@ body {
   @apply bg-white w-full rounded-lg text-libertyBlue py-3 px-3 relative font-sora
 }
 .dashboard-div-header{
-  @apply font-sora text-sm text-libertyDTextBlue font-light capitalize
+  @apply font-sora text-xs text-libertyDTextBlue font-light capitalize
+}
+
+.chart-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container canvas {
+  border-radius: 10px;
+}
+
+.chart-container .chartjs-doughnut-label {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #333;
 }

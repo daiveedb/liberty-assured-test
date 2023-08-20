@@ -10,6 +10,9 @@ import profileIcon from "./projectSvgs/profileIcon.svg"
 import bankPerformanceIcon from "./projectSvgs/bankPerformanceIcon.svg"
 import redCircle from "@/projectSvgs/redCircle.png"
 import greenCircle from "@/projectSvgs/greenCircle.png"
+import blueCircle from "@/projectSvgs/blueCircle.png"
+import yellowCircle from "@/projectSvgs/yellowCircle.png"
+import purpleCircle from "@/projectSvgs/purpleCircle.png"
 
 export const navLinks = [
     {
@@ -195,3 +198,15 @@ export const transaction = [
     },
     
 ]
+
+export const chartData = {
+    icon1:blueCircle,
+    icon2:yellowCircle,
+    icon3:purpleCircle,
+    value1:105000000,
+    value2:32000000,
+    value3:42000000,
+    header1:"send money",
+    header2:"cashout",
+    header3:"utilities and bills"
+}

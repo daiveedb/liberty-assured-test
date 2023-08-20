@@ -20,7 +20,7 @@ const Sidebar = () => {
             <p className='text-xs header tracking-wide font-extralight'>by LibertyPay</p>
           </div>
 
-          <Divider/>
+          <Divider index={1}/>
 
           {
             navLinks.slice(0,2).map((item) => {
@@ -28,7 +28,7 @@ const Sidebar = () => {
             })
           }
 
-          <Divider/>
+          <Divider index={1}/>
 
           {
             navLinks.slice(2,7).map((item) => {
@@ -36,7 +36,7 @@ const Sidebar = () => {
             })
           }
 
-          <Divider/>
+          <Divider index={1}/>
 
           {
             navLinks.slice(7,10).map((item) => {
