@@ -6,11 +6,6 @@ import NavLink from './navigationComponents/NavLink'
 
 const Sidebar = () => {
 
-  const [selected, setSelected] = useState("Analytics Dashboard")
-
-  const updateSelected = (str) => {
-    setSelected(str)
-  }
 
   return (
       <div id='sidebar' className='fixed z-10 -right-[270px] md:static top-[14vh] max-w-[270px] min-w-[270px] min-h-[86vh] md:min-h-screen md:py-4 px-7 bg-libertyBlue md:bg-libertyDarkBlue transition-all'>
@@ -24,7 +19,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(0,2).map((item) => {
-              return <NavLink key={item.title} selected={selected} updateSelected={updateSelected} item={item}/>
+              return <NavLink key={item.title} item={item}/>
             })
           }
 
@@ -32,7 +27,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(2,7).map((item) => {
-              return <NavLink key={item.title} selected={selected} updateSelected={updateSelected} item={item}/>
+              return <NavLink key={item.title} item={item}/>
             })
           }
 
@@ -40,7 +35,7 @@ const Sidebar = () => {
 
           {
             navLinks.slice(7,10).map((item) => {
-              return <NavLink key={item.title} selected={selected} updateSelected={updateSelected} item={item}/>
+              return <NavLink key={item.title} item={item}/>
             })
           }
           

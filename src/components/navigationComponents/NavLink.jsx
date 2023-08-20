@@ -6,15 +6,27 @@ import Link from 'next/link'
 import { usePathname } from "next/navigation"
 
 
-const NavLink = ({item, updateSelected, selected}) => {
+const NavLink = ({item}) => {
 
-   
+    const [sideArrow,setSideArrow] = useState(false)
     const pathname = usePathname()
+    const [dropdownStyle, setDropdownStyle] = useState("")
 
-    const handleClick = (str) => {
-        updateSelected(str)
+    const handleNavClick = () => {
+
         const sidebar = document.getElementById("sidebar")
         sidebar.style.right = '-300px'
+
+        if(item.dropdown){
+            if(sideArrow){
+                setDropdownStyle("")
+            }else{
+                setDropdownStyle("rotate-90")
+            }
+        }
+        setSideArrow(!sideArrow)
+
+        
     }
     const [styles, setStyles] = useState('')
 
@@ -28,6 +40,7 @@ const NavLink = ({item, updateSelected, selected}) => {
     }
 
 
+
     useEffect(() => {
         handleLinkStyles()
     },[pathname])
@@ -36,7 +49,7 @@ const NavLink = ({item, updateSelected, selected}) => {
 
   return (
     <Link href={item.link}>
-            <div onClick={() => handleClick(item.title)} className={styles+' flex w-full justify-between items-center rounded-md'}>
+            <div onClick={() => handleNavClick()} className={styles+' flex w-full justify-between items-center rounded-md'}>
                 <div className='flex w-full items-center py-2 md:py-3 pl-3 text-white gap-x-2 rounded-lg'>
                     <div>
                         <Image width={20} height={20} alt='icon' src={item.icon}/>
@@ -45,7 +58,7 @@ const NavLink = ({item, updateSelected, selected}) => {
                 </div>
                 <div>
                     {item.dropdown?
-                    <p id='dropdown-arrow' className='text-lg'><AiOutlineRight/></p>
+                    <p id='dropdown-arrow' className={dropdownStyle +' text-lg transition-all'}><AiOutlineRight/></p>
                     :
                     <p></p>
                     }
