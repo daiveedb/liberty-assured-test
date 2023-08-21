@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import Divider from './utilityComponents/Divider'
 import { navLinks } from '@/testData'
 import NavLink from './navigationComponents/NavLink'

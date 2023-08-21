@@ -4,7 +4,7 @@ import {AiOutlineClose} from "react-icons/ai"
 const MenuButton = ({isSidebarOn, toggleSidebar}) => {
 
     const handleToggleSidebar = () => {
-        toggleSidebar()
+      toggleSidebar()
     }
 
 

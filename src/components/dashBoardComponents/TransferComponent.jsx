@@ -15,8 +15,8 @@ const TransferComponent = ({item}) => {
         <div className='bg-libertyDashboardLightBlue w-full h-full py-4 px-3'>
             <div className='flex justify-between items-center'>
                 <p className='dashboard-div-header'>{item.title}</p>
-                <div className='bg-libertyLightestBlue w-[70px] h-8 flex justify-center items-center rounded-md gap-x-2 cursor-pointer'>
-                    <p className='text-xs font-extralight'>More</p>
+                <div className='bg-libertyLightestBlue w-[60px] h-8 flex justify-center items-center rounded-md gap-x-2 cursor-pointer'>
+                    <p className='text-[10px] font-extralight'>More</p>
                     <Image src={downArrow} width={10} height={10} alt='down arrow'/>
                 </div>
             </div>

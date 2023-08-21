@@ -12,14 +12,20 @@ const TransactionsComponent = ({item}) => {
     }else{
         style = "h-[150px]"
     }
+    let padding
+    if(id === 2){
+        padding = "pl-3"
+    }else{
+        padding = "pl-0"
+    }
 
   return (
     <div className={style + ' dashboard-div'}>
         <div className='bg-libertyDashboardLightBlue w-full h-full py-4 px-3 flex flex-col justify-between'>
-            <div className='flex justify-between items-center gap-x-3'>
-                <p className='dashboard-div-header'>{item.title}</p>
-                <div className='bg-libertyLightestBlue w-[70px] h-8 flex justify-center items-center rounded-md gap-x-2 cursor-pointer'>
-                    <p className='text-xs font-extralight'>More</p>
+            <div className='flex justify-between items-center gap-x-4'>
+                <p className='dashboard-div-header md:max-w-[60%]'>{item.title}</p>
+                <div className='bg-libertyLightestBlue w-[60px] h-8 flex justify-center items-center rounded-md gap-x-1 cursor-pointer'>
+                    <p className='text-[10px] font-extralight'>More</p>
                     <Image src={downArrow} width={10} height={10} alt='down arrow'/>
                 </div>
             </div>
@@ -29,14 +35,14 @@ const TransactionsComponent = ({item}) => {
                         {item.icon1 && <div className='pr-1'><Image src={item.icon1} width={5} height={5} alt='green dot'/></div>}
                         <p className='capitalize text-xs font-nunito font-extralight py-[2px]'>{item.header1}</p>
                     </div>
-                    <p className='text-sm md:text-[10px] lg:text-sm font-semibold tracking-wide'>{!item.icon1 &&'₦'}{commaFormat(item.value1)}</p>
+                    <p className={padding +' text-sm md:text-[10px] lg:text-sm font-semibold tracking-wide'}>{!item.icon1 &&'₦'}{commaFormat(item.value1)}</p>
                 </div>
                 <div>
                     <div className='flex items-center'>
                         {item.icon2 && <div className='pr-1'><Image src={item.icon2} width={5} height={5} alt='green dot'/></div>}
                         <p className='capitalize text-xs font-nunito font-extralight py-[2px]'>{item.header2}</p>
                     </div>
-                    <p className='text-sm md:text-[10px] lg:text-sm font-semibold tracking-wide'>{!item.icon2 &&'₦'}{commaFormat(item.value2)}</p>
+                    <p className={padding +' text-sm md:text-[10px] lg:text-sm font-semibold tracking-wide'}>{!item.icon2 &&'₦'}{commaFormat(item.value2)}</p>
                 </div>
             </div>
         </div>

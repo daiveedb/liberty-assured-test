@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
 import ProfileSnippet from '../navigationComponents/ProfileSnippet'
 import MenuButton from '../navigationComponents/MenuButton'
 
