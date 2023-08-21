@@ -15,7 +15,7 @@ const NavLink = ({item}) => {
     const handleNavClick = () => {
 
         const sidebar = document.getElementById("sidebar")
-        if (!item.dropdown){
+        if (!item.dropdown && item.link !== pathname){
             sidebar.style.right = '-300px'
         }
 
