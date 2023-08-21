@@ -3,7 +3,7 @@ import Image from 'next/image'
 import rectangleDown from "@/projectSvgs/rectangleDown.png"
 import rectangleTopLeft from "@/projectSvgs/rectangleTopLeft.png"
 import rectangleTopRight2 from "@/projectSvgs/rectangleTopRight2.png"
-import rectangletopRight1 from "@/projectSvgs/rectangletopRight1.png"
+import rectangleTopRight1 from "@/projectSvgs/rectangleTopRight1.png"
 
 const WalletSvgs = () => {
   return (
@@ -18,7 +18,7 @@ const WalletSvgs = () => {
             <Image src={rectangleTopRight2} width={100} height={100} alt='rectandle'/>
           </div> 
           <div className='absolute top-0 right-5'>
-            <Image src={rectangletopRight1} width={100} height={100} alt='rectandle'/>
+            <Image src={rectangleTopRight1} width={100} height={100} alt='rectandle'/>
           </div> 
     </div>
 
