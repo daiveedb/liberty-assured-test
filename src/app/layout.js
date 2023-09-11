@@ -1,4 +1,5 @@
 "use client"
+
 import Sidebar from '@/components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       {/* <!-- Google Tag Manager --> */}
-        <script>
+        {/* <script>
           
           {(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,10 +21,10 @@ export default function RootLayout({ children }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-5LL5QRGT')};
 
-      </script>
+      </script> */}
 {/* <!-- End Google Tag Manager --> */}
       {/* <!-- Google tag (gtag.js) --> */}
-      {/* <Script
+      <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-G9SEJCN13K`}
       />
@@ -37,7 +38,7 @@ export default function RootLayout({ children }) {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script> */}
+      </Script>
         <title>Liberty Assured Test</title>
       </head>
         <body className={inter.className}>
