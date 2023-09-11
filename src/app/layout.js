@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
 
       </script> */}
 {/* <!-- End Google Tag Manager --> */}
-      {/* <!-- Google tag (gtag.js) --> */}
+{/* <!-- Google tag (gtag.js) --> */}
+
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-G9SEJCN13K`}
@@ -43,11 +44,11 @@ export default function RootLayout({ children }) {
       </head>
         <body className={inter.className}>
         {/* Google Tag Manager */}
-        <noscript>
+        {/* <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LL5QRGT"
             height="0" width="0" style="display:none;visibility:hidden">
           </iframe>
-        </noscript>
+        </noscript> */}
           <div className='flex justify-between items-center bg-libertyDarkBlue w-[100vw] overflow-x-hidden'>
             <Sidebar/> 
             <main className='w-full min-h-screen max-h-max md:px-2 md:py-5'>
