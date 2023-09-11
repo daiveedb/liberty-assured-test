@@ -53,11 +53,11 @@ export default function RootLayout({ children }) {
       </head>
         <body className={inter.className}>
         {/* Google Tag Manager */}
-        <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LL5QRGT"
-            height="0" width="0" style="display:none;visibility:hidden">
-          </iframe>
-        </noscript>
+        <noscript
+    dangerouslySetInnerHTML={{
+      __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LL5QRGT" height="0" width="0" style="display: none; visibility: hidden;" />`,
+    }}
+  />
           <div className='flex justify-between items-center bg-libertyDarkBlue w-[100vw] overflow-x-hidden'>
             <Sidebar/> 
             <main className='w-full min-h-screen max-h-max md:px-2 md:py-5'>
