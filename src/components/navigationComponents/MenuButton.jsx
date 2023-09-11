@@ -11,7 +11,7 @@ const MenuButton = ({isSidebarOn, toggleSidebar}) => {
 
   return (
     <div className='block md:hidden cursor-pointer scale-90 sm:scale-100'>
-        <div onClick={() => handleToggleSidebar()} className='w-[87px] h-10 bg-libertyLighterBlue p-2 rounded-md flex justify-center items-center font-montserrat'>
+        <div id='mnu-button' onClick={() => handleToggleSidebar()} className='w-[87px] h-10 bg-libertyLighterBlue p-2 rounded-md flex justify-center items-center font-montserrat'>
             {isSidebarOn?
             <p className='text-xl'><AiOutlineClose/></p>:
             <p>Menu</p>
